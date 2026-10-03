@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "SmartPay Device Lock (Run - No Debug)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "noDebug": true,
+      "env": {
+        "ORG_GRADLE_PROJECT_deviceTrackKey": "sp_trk_8f7b2c9d1e4a5061728394a5b6c7d8e9"
+      },
+      "toolArgs": [
+        "--dart-define=DEVICE_TRACK_KEY=sp_trk_8f7b2c9d1e4a5061728394a5b6c7d8e9"
+      ]
+    },
+    {
+      "name": "SmartPay Device Lock (Debug)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "env": {
+        "ORG_GRADLE_PROJECT_deviceTrackKey": "sp_trk_8f7b2c9d1e4a5061728394a5b6c7d8e9"
+      },
+      "toolArgs": [
+        "--dart-define=DEVICE_TRACK_KEY=sp_trk_8f7b2c9d1e4a5061728394a5b6c7d8e9"
+      ]
+    },
+    {
+      "name": "SmartPay Device Lock (With Default API URL)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "env": {
+        "ORG_GRADLE_PROJECT_deviceTrackKey": "sp_trk_8f7b2c9d1e4a5061728394a5b6c7d8e9"
+      },
+      "toolArgs": [
+        "--dart-define=SMART_PAY_APK_API_BASE_URL=https://api.smartpay.click/apk",
+        "--dart-define=DEVICE_TRACK_KEY=sp_trk_8f7b2c9d1e4a5061728394a5b6c7d8e9"
+      ]
+    }
+  ]
+}
